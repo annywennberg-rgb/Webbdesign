@@ -40,5 +40,24 @@ if (blomma) {
 //Stänger popupen när man klickar på krysset
 stangpopup.addEventListener("click", function () {
     popup.style.display = "none";
+});
+
+
+//Hämtar formuläret från kontakt-sidan
+const tipsform = document.getElementById("tipsform");
+const tackmeddelande = document.getElementById("tackmeddelande");
+
+//Kontrollerar att formuläret finns på sidan
+if (tipsform && tackmeddelande) {
+
+    //Lyssnar efter att någon skcikar in formuläret
+    tipsform.addEventListener ("submit", function(event) {
+
+        //Förhindrar att sidan laddas om
+        event.preventDefault ();
+
+        //Döljer formuläret
+        tipsform.style.display = "none";
 
 });
+}

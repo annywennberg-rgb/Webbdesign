@@ -154,45 +154,72 @@ body.Kontakt .tillbaka-knapp {
     background-color: #a2c5e1;
     color: #2970d1;
 }
-.Kontakt .kontaktinfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: fit-content;
-    margin: 0 auto;
-    min-height: calc(100vh - 100px);
-}
-.Kontakt .kontakt-rad {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 10px;
-}
-.Kontakt .kontakt-rad img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 20%;
-    display: flex;
-    margin-left: 200px;
-}
-.Kontakt .kontakt-rad p {
-    margin: 50;
-    font-size: 20px;
-    color: #032b9b;
 
+/*Formulär för resetips*/
+.Kontakt .resetips {
+    background-color: #cae7ff;
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    text-align: center;
+    border: #032b9b;
 }
-.Kontakt .kontakt-rad img:hover {
-    background-color: #a2c5e1;
+/*Rubrik*/
+.Kontakt .resetips h2 {
     color: #2970d1;
+    font-size: 28px;
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Texten*/
+.Kontakt .resetips p {
+        color: #2970d1;
+    font-size: 18px;
+    font-family:'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Frågetext*/
+.Kontakt .resetips label {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    color: #032b9b;
+    font-weight: bold;
+    font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Svarsrutor*/
+.Kontakt .resetips input,
+.Kontakt .resetips textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+/*Gör textrutan lite större*/
+.Kontakt .resetips textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+/*Skicka knapp*/
+.Kontakt .resetips button {
+    background-color: #2970d1;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    font-family:'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*När musen svävar över knappen*/
+.Kontakt .resetips button:hover {
     transform: scale(1.10);
 }
-.Kontakt .kontakt-rad p:hover {
-    background-color: #a2c5e1;
-    color: #2970d1;
-    transform: scale(1.10);
-}
+
 
 /*rubrikbild till kontakt-sidan*/
 .Kontakt header .rubriker {

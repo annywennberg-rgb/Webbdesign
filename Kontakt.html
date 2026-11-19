@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
   <meta charset="UTF-8">
@@ -31,28 +31,38 @@
   </header>
 
   <!--Rubriken-->
-  <h1> 💙Vill du så kan du kontakta mig via någon av följnade medier!💙</h1>
+  <h1> 💙Ta kontakt med oss och ge oss dina bästa ställen!💙</h1>
+  <h1>💙Vi älskar att få tips och du sitter säkert på riktigt bra sådanna!💙</h1>
 
 
-  <!--De olika kontaktinformationsbilderna-->
-  <div class="kontaktinfo">
-    <div class="kontakt-rad">
-      <img src="Bilder/instagram.png" alt="Instagram">
-      <p>Instagram: @annywennberg</p>
-    </div>
-
-    <div class="kontakt-rad">
-      <img src="Bilder/Telefon.png" alt="Telefon">
-      <p>Telefon: 0723269147</p>
-    </div>
-
-    <div class="kontakt-rad">
-      <img src="Bilder/Mejl.png" alt="Mejl">
-      <p>Mejl: anny.wennberg@icloud.com</p>
-    </div>
-  </div>
+  <!--Formuär för resetips-->
+  <section class="resetips">
+    <h2>Har du resetips?</h2>
+    <p>Tipsa oss om en sevärdhet som vi inte får missa!</p>
 
 
+    <form id="tipsform">
+      <!--Första frågan-->
+      <label for="sevärdhet">Vad heter sevärdheten?</label>
+      <input type="text" id="sevardhet" required placeholder="Exempelvis Eiffeltornet">
+
+      <!--Andra frågan-->
+      <label for="plats">Var ligger den?</label>
+      <input type="text" id="plats" required placeholder="Stad och Land">
+
+      <!--Tredje frågan-->
+      <label for="tips">Berätta mer om ditt tips!</label>
+      <textarea id="tips" required placeholder="Varför borde vi besöka platsen?"></textarea>
+
+      <!--Skicka in svar-->
+      <button type="submit">Skicka tips!</button>
+    </form>
+  </section>
+
+
+    <h1>💙</h1>
+<!--Kopplar till javascript-->
+<script src="Style/myscript.js"></script>
 
 </body>
 
