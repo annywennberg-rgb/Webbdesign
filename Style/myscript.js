@@ -51,13 +51,13 @@ const tackmeddelande = document.getElementById("tackmeddelande");
 if (tipsform && tackmeddelande) {
 
     //Lyssnar efter att någon skcikar in formuläret
-    tipsform.addEventListener ("submit", function(event) {
+    tipsform.addEventListener("submit", function (event) {
 
         //Förhindrar att sidan laddas om
-        event.preventDefault ();
+        event.preventDefault();
 
         //Döljer formuläret
         tipsform.style.display = "none";
 
-});
+    });
 }
