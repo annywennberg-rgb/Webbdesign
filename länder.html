@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Länder</title>
+  <link rel="stylesheet" href="Style/styles.css">
+</head>
+
+<script src="Style/myscript.js" defer></script>
+
+
+
+<body class="länder">
+
+  <!--Den övre blå banderollen-->
+  <header>
+    <div>
+      <a href="Blomman.html">
+        <img src="Bilder/blomma.banderoll.png" class="headerbild">
+      </a>
+    </div>
+
+    <div>
+      <a href="Rubrik-länder.png">
+        <img src="Bilder/rubrik-länder.png" class="rubriker">
+    </div>
+
+    <div>
+      <a href="index.html" class="tillbaka-knapp">
+        Tillbaka!
+      </a>
+    </div>
+  </header>
+
+  <!--Rubriken-->
+  <h1>💙Klicka dig runt och ta del av de olika platerna vi besökt hittills!💙</h1>
+
+  <main>
+    <section class="galleri-intro">
+    </section>
+    <!--Bilderna och textrutorna i bilderna-->
+    <section class="galleriet">
+      <div class="bildkort">
+        <img src="Bilder/rhodos.jpg" alt="Rhodos">
+        <div class="bildtext">Rhodos🌊</div>
+      </div>
+
+      <div class="bildkort">
+        <img src="Bilder/italien.jpg" alt="Italien">
+        <div class="bildtext">Italien🍝</div>
+      </div>
+
+      <div class="bildkort">
+        <img src="Bilder/kroatien.jpg" alt="Kroatien">
+        <div class="bildtext">Kroatien👙</div>
+      </div>
+
+      <div class="bildkort">
+        <img src="Bilder/österrike.jpg" alt="österrike">
+        <div class="bildtext">Österrike🌺</div>
+      </div>
+
+      <!--Blomman längst ner med Java-scrpit-->
+      <div class="bildkort">
+        <img src="Bilder/frankrike.jpg" alt="frankrike">
+        <div class="bildtext">Frankrike🍋</div>
+      </div>
+
+      <div class="bildkort-framtid" id="slumpa">
+        <img src="Bilder/framtida-resor.png" alt="framtida-resor">
+      </div>
+    </section>
+  </main>
+
+  <!--Min lilla popup med våra nya resmål-->
+  <div id="resultatpopup" class="popup">
+    <div class="popup-innehåll">
+      <span id="stangpopup">&times;</span>
+      <p>Nästa resa blir till...</p>
+      <h1 id="landresultat"></h1>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

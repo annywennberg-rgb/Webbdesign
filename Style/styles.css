@@ -1,0 +1,355 @@
+/*Första sidan*/
+body {
+    background-color: #a2c5e1;
+    margin: 0;
+    padding: 0;
+}
+
+/*Övre blå banderoll*/
+header {
+    background-color: #2970d1;
+    color: #a2c5e1;
+    padding: 20px;
+    height: 100px;
+    box-sizing: border-box;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*den lilla blomman*/
+.headerbild {
+    width: 60px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* när muspekaren är över blomman*/
+.headerbild:hover {
+    background-color: #a2c5e1;
+    color: #2970d1;
+    transform: scale(1.10);
+}
+
+/*avståndet mellan knapparna*/
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+/*knappar till nästa sida*/
+nav a {
+    text-decoration: none;
+    color: #2970d1;
+    background-color: #a2c5e1;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/*effekten när man håller muspekare över knapparna*/
+nav a:hover {
+    transform: scale(1.10);
+}
+
+/* Stilen på knapparna*/
+.meny-knapp {
+    font-family: 'Lucida Grande', Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+    color: #2970d1;
+    font-size: 15px;
+    font-family: 'Lucida Grande', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*bilden på första sidan*/
+.omslag {
+    background-image: url(../Bilder/omslagsbild.jpg);
+    background-size: 100% 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+/*blå rutan med texten på första sidan*/
+.textomslag {
+    background-color: rgba(162, 197, 225, 0.6);
+    color: #2970d1;
+    text-align: left;
+    padding: 0px 8px;
+    width: 530px;
+    height: auto;
+    font-family: 'Lucida Grande', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-style: oblique;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px rgba(242, 244, 249, 0.6);
+    line-height: 0.5;
+    align-self: flex-end;
+}
+
+/*effekten när man håller muspekare över tillbaka knappen*/
+.tillbaka-knapp:hover {
+    transform: scale(1.10);
+}
+.tillbaka-knapp {
+    display: block;
+    width: fit-content;
+    margin: 0 40px 0 auto;
+
+    background-color: #a2c5e1;
+    color: #2970d1;
+    font-family: 'Lucida Grande', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background-color: #a2c5e1;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/*Nedre blå banderoll*/
+footer {
+    background-color: #2970d1;
+    color: bisque;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-top: -0, 5%;
+    padding: 20px
+}
+
+/*Blomman-sidan*/
+.Blomman {
+    background-color: #2970d1;
+    background-image: url(../Bilder/blomma.storbild.jpg);
+    background-size: 100% 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+body.Blomman .tillbaka-knapp {
+    margin: 20px 0 30px 40px;
+}
+
+/* kontakt-sidan*/
+body.Kontakt .tillbaka-knapp {
+    background-color: #a2c5e1;
+    color: #2970d1;
+}
+.Kontakt .kontaktinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: fit-content;
+    margin: 0 auto;
+    min-height: calc(100vh - 100px);
+}
+.Kontakt .kontakt-rad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+}
+.Kontakt .kontakt-rad img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20%;
+    display: flex;
+    margin-left: 200px;
+}
+.Kontakt .kontakt-rad p {
+    margin: 50;
+    font-size: 20px;
+    color: #032b9b;
+
+}
+.Kontakt .kontakt-rad img:hover {
+    background-color: #a2c5e1;
+    color: #2970d1;
+    transform: scale(1.10);
+}
+.Kontakt .kontakt-rad p:hover {
+    background-color: #a2c5e1;
+    color: #2970d1;
+    transform: scale(1.10);
+}
+
+/*rubrikbild till kontakt-sidan*/
+.Kontakt header .rubriker {
+    width: auto;
+    height: 100px;
+    display: block;
+    margin-left: 0;
+}
+
+/* om oss-sidan*/
+body.om-oss .tillbaka-knapp {
+    background-color: #a2c5e1;
+    color: #2970d1;
+}
+.om-oss-bilder {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0px;
+    padding: 0px;
+}
+.om-oss-bilder .personbilder {
+    min-width: 0;
+    width: 100%;
+}
+.personbilder img {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+/*rubrikbild till om oss-sidan*/
+.om-oss header .rubriker {
+    width: auto;
+    height: 100px;
+    display: block;
+}
+
+/*flytta rubrikbilderna närmare blomman*/
+.länder header .rubriker,
+.Kontakt header .rubriker,
+.om-oss header .rubriker {
+    transform: translateX();
+}
+
+
+/* Länder-sidan*/
+body.länder .tillbaka-knapp {
+    background-color: #a2c5e1;
+    color: #2970d1;
+}
+
+/*rubrikbild till länder-sidan*/
+.länder header .rubriker {
+    width: auto;
+    height: 100px;
+    display: block;
+}
+
+/*Bildgalleriet på alla resorna*/
+.galleri-intro {
+    text-align: center;
+    padding: 20px;
+}
+.galleriet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+}
+.galleriet img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.bildkort {
+    position: relative;
+    transition: 0.3s ease;
+}
+.bildtext {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: #2970d1;
+    font-family: 'Lucida Grande', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: clamp(10px, 2vw, 24px);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2% 4%;
+    border-radius: 12px;
+}
+
+/*Bilden på blomman längst ner*/
+.bildkort-framtid {
+    position: relative;
+}
+.bildkort-framtid .bildtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    color: #463610;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+.bildkort:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease;
+}
+
+/*Blommnan länst ner i bild som visar vart vi ska nästa gång*/
+.bildkort-framtid {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.bildkort-framtid:hover {
+    transform: scale(1.08);
+}
+
+/*Popupen som visar vårt nästa resmål*/
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    inset: 0;
+    background: rgba (0, 0, 0, 0.35);
+    justify-content: center;
+    align-items: center;
+
+}
+.popup-innehåll {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    width: 50%;
+    max-width: 400px;
+    color: #2970d1;
+    box-shadow: 0 5px 20px rgba (0, 0, 0, 0.15);
+}
+.popup-innehåll h2 {
+    font-size: 25px;
+}
+.popup-innehåll h1 {
+    font-size: 35px;
+    color: #2970d1;
+}
+#stangpopup {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
