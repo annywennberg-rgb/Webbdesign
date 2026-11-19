@@ -9,14 +9,48 @@ body {
 header {
     background-color: #2970d1;
     color: #a2c5e1;
-    padding: 20px;
-    height: 80px;
+    padding: 15px 2%;
+    min-height: 80px;
+    height: auto;
     box-sizing: border-box;
     text-align: right;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
+
+/*avståndet mellan knapparna*/
+nav {
+    display: flex;
+    gap: clamp(8px, 3vw, 50px);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*knappar till nästa sida*/
+nav a {
+    text-decoration: none;
+    color: #2970d1;
+    background-color: #a2c5e1;
+    padding: clamp(7px, 1.5vw, 10px) clamp(10px, 2vw, 25px);
+    border-radius: 25px;
+    font-size: clamp(11px, 1.2vw, 15px);
+    transition: 0.3s;
+}
+
+/*effekten när man håller muspekare över knapparna*/
+nav a:hover {
+    transform: scale(1.10);
+}
+
+/* Stilen på knapparna*/
+.meny-knapp {
+    font-family: 'Lucida Grande', Geneva, Verdana, sans-serif;
+}
+
 
 /*den lilla blomman*/
 .headerbild {
@@ -33,33 +67,6 @@ header {
     transform: scale(1.10);
 }
 
-/*avståndet mellan knapparna*/
-nav {
-    display: flex;
-    gap: 50px;
-}
-
-/*knappar till nästa sida*/
-nav a {
-    text-decoration: none;
-    color: #2970d1;
-    background-color: #a2c5e1;
-    padding: 10px 25px;
-    border-radius: 25px;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-/*effekten när man håller muspekare över knapparna*/
-nav a:hover {
-    transform: scale(1.10);
-}
-
-/* Stilen på knapparna*/
-.meny-knapp {
-    font-family: 'Lucida Grande', Geneva, Verdana, sans-serif;
-
-}
 
 h1 {
     color: #2970d1;
